@@ -1,6 +1,6 @@
 # 📚 Exercícios de Lógica com C#
 
-Este repositório foi criado para organizar todos os exercícios e projetos desenvolvidos durante as aulas de lógica de programação e C#.
+Este repositório foi criado para organizar todos os exercícios e projetos de lógica de programação e C#.
 
 ## 🚀 Objetivo
 O foco principal é o aprendizado de fundamentos de programação.
