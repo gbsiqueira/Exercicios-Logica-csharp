@@ -8,7 +8,7 @@ O foco principal é o aprendizado de fundamentos de programação.
 ## 📂 Estrutura do Repositório
 Cada pasta dentro deste repositório representa um exercício específico:
 * `Exercicio-Media de Aluno`: Prática de operações matemáticas básicas.
-* `Exercicio-Media de Aluno`: Exercicio-Lista de Tenis: Prática de manipulação de coleções dinâmicas (List<string>) e sincronização de interface visual (WinForms) através de métodos de limpeza e atualização de tela.
+* `Exercicio-Lista de Tenis`: Prática de manipulação de coleções dinâmicas (List<string>) e sincronização de interface visual (WinForms) através de métodos de limpeza e atualização de tela.
 
 ## 🛠️ Tecnologias Utilizadas
 * **Linguagem:** C#
