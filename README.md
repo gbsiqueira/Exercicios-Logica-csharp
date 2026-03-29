@@ -9,6 +9,8 @@ O foco principal é o aprendizado de fundamentos de programação.
 Cada pasta dentro deste repositório representa um exercício específico:
 * `Exercicio-Media de Aluno`: Prática de operações matemáticas básicas.
 * `Exercicio-Lista de Tenis`: Prática de manipulação de coleções dinâmicas (List<string>) e sincronização de interface visual (WinForms) através de métodos de limpeza e atualização de tela.
+* `Exercicio-Gerenciador de Tarefas`: Evolução do uso de listas com foco em UX (User Experience). Implementação de validação de caracteres, feedback visual com alteração de cores, mensagens de status via Label e remoção inteligente através de índices (SelectedIndex).
+
 
 ## 🛠️ Tecnologias Utilizadas
 * **Linguagem:** C#
