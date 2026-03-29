@@ -36,6 +36,7 @@
             this.lsttarefas = new System.Windows.Forms.ListBox();
             this.lblacao = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +44,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lsttarefas);
-            this.groupBox2.Location = new System.Drawing.Point(101, 24);
+            this.groupBox2.Location = new System.Drawing.Point(105, 45);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(442, 273);
             this.groupBox2.TabIndex = 0;
@@ -74,6 +75,7 @@
             this.btnremover.TabIndex = 3;
             this.btnremover.Text = "Remover";
             this.btnremover.UseVisualStyleBackColor = true;
+            this.btnremover.Click += new System.EventHandler(this.btnremover_Click);
             // 
             // btnlimpar
             // 
@@ -81,7 +83,7 @@
             this.btnlimpar.Name = "btnlimpar";
             this.btnlimpar.Size = new System.Drawing.Size(75, 23);
             this.btnlimpar.TabIndex = 4;
-            this.btnlimpar.Text = "Limpar";
+            this.btnlimpar.Text = "Atualizar";
             this.btnlimpar.UseVisualStyleBackColor = true;
             // 
             // lsttarefas
@@ -95,10 +97,10 @@
             // lblacao
             // 
             this.lblacao.AutoSize = true;
-            this.lblacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblacao.Location = new System.Drawing.Point(575, 182);
+            this.lblacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblacao.Location = new System.Drawing.Point(553, 215);
             this.lblacao.Name = "lblacao";
-            this.lblacao.Size = new System.Drawing.Size(0, 16);
+            this.lblacao.Size = new System.Drawing.Size(0, 15);
             this.lblacao.TabIndex = 5;
             // 
             // groupBox1
@@ -107,17 +109,28 @@
             this.groupBox1.Controls.Add(this.btnadcionar);
             this.groupBox1.Controls.Add(this.btnlimpar);
             this.groupBox1.Controls.Add(this.btnremover);
-            this.groupBox1.Location = new System.Drawing.Point(553, 45);
+            this.groupBox1.Location = new System.Drawing.Point(553, 64);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(235, 134);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(143, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 18);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Lista de Tarefas";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblacao);
             this.Controls.Add(this.groupBox2);
@@ -141,6 +154,7 @@
         private System.Windows.Forms.Button btnlimpar;
         private System.Windows.Forms.Label lblacao;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
