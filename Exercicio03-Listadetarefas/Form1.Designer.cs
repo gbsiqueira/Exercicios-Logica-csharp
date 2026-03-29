@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtadicionar = new System.Windows.Forms.TextBox();
+            this.txttarefa = new System.Windows.Forms.TextBox();
             this.btnadcionar = new System.Windows.Forms.Button();
             this.btnremover = new System.Windows.Forms.Button();
             this.btnlimpar = new System.Windows.Forms.Button();
@@ -49,12 +49,12 @@
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
-            // txtadicionar
+            // txttarefa
             // 
-            this.txtadicionar.Location = new System.Drawing.Point(25, 28);
-            this.txtadicionar.Name = "txtadicionar";
-            this.txtadicionar.Size = new System.Drawing.Size(100, 20);
-            this.txtadicionar.TabIndex = 1;
+            this.txttarefa.Location = new System.Drawing.Point(25, 28);
+            this.txttarefa.Name = "txttarefa";
+            this.txttarefa.Size = new System.Drawing.Size(100, 20);
+            this.txttarefa.TabIndex = 1;
             // 
             // btnadcionar
             // 
@@ -103,7 +103,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txtadicionar);
+            this.groupBox1.Controls.Add(this.txttarefa);
             this.groupBox1.Controls.Add(this.btnadcionar);
             this.groupBox1.Controls.Add(this.btnlimpar);
             this.groupBox1.Controls.Add(this.btnremover);
@@ -134,7 +134,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox txtadicionar;
+        private System.Windows.Forms.TextBox txttarefa;
         private System.Windows.Forms.ListBox lsttarefas;
         private System.Windows.Forms.Button btnadcionar;
         private System.Windows.Forms.Button btnremover;
