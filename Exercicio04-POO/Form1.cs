@@ -68,7 +68,7 @@ namespace Exercicio04_POO
             //Lendo cada item dos dados da lista e adicionando na lista visual
             foreach (var item in Estoque)
             {
-                lstinventario.Items.Add($"{item.Nome} tem o valor de R${item.Valor:C}");
+                lstinventario.Items.Add($"{item.Nome} tem o valor de {item.Valor:C}");
             }
             //voltando as cores normais
             txtpreco.BackColor = Color.White;
@@ -83,6 +83,22 @@ namespace Exercicio04_POO
         private void btnatualizar_Click(object sender, EventArgs e)
         {   //chamando a função atualizar
             Atualizar();
+        }
+
+        private void btnremover_Click(object sender, EventArgs e)
+        {
+            if (lstinventario.SelectedIndex <0)
+            {   //mensagem de erro
+                MessageBox.Show("Favor selecione um item na lista", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+
+            }
+            else
+            {  //removendo o item selecinado dos dados da lista
+                Estoque.RemoveAt(lstinventario.SelectedIndex);
+                //chamando a função atualizar
+                Atualizar();
+            }
         }
     }
 }

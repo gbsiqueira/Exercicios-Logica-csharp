@@ -35,6 +35,7 @@
             this.btnadicionar = new System.Windows.Forms.Button();
             this.lstinventario = new System.Windows.Forms.ListBox();
             this.btnatualizar = new System.Windows.Forms.Button();
+            this.btnremover = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +74,7 @@
             // 
             // btnadicionar
             // 
-            this.btnadicionar.Location = new System.Drawing.Point(342, 229);
+            this.btnadicionar.Location = new System.Drawing.Point(342, 226);
             this.btnadicionar.Name = "btnadicionar";
             this.btnadicionar.Size = new System.Drawing.Size(75, 23);
             this.btnadicionar.TabIndex = 4;
@@ -99,11 +100,22 @@
             this.btnatualizar.UseVisualStyleBackColor = true;
             this.btnatualizar.Click += new System.EventHandler(this.btnatualizar_Click);
             // 
+            // btnremover
+            // 
+            this.btnremover.Location = new System.Drawing.Point(425, 226);
+            this.btnremover.Name = "btnremover";
+            this.btnremover.Size = new System.Drawing.Size(75, 23);
+            this.btnremover.TabIndex = 7;
+            this.btnremover.Text = "Remover";
+            this.btnremover.UseVisualStyleBackColor = true;
+            this.btnremover.Click += new System.EventHandler(this.btnremover_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 450);
+            this.Controls.Add(this.btnremover);
             this.Controls.Add(this.btnatualizar);
             this.Controls.Add(this.lstinventario);
             this.Controls.Add(this.btnadicionar);
@@ -127,6 +139,7 @@
         private System.Windows.Forms.Button btnadicionar;
         private System.Windows.Forms.ListBox lstinventario;
         private System.Windows.Forms.Button btnatualizar;
+        private System.Windows.Forms.Button btnremover;
     }
 }
 
