@@ -79,6 +79,7 @@
             this.btnadicionar.TabIndex = 4;
             this.btnadicionar.Text = "Cadastrar";
             this.btnadicionar.UseVisualStyleBackColor = true;
+            this.btnadicionar.Click += new System.EventHandler(this.btnadicionar_Click);
             // 
             // lstinventario
             // 
@@ -96,6 +97,7 @@
             this.btnatualizar.TabIndex = 6;
             this.btnatualizar.Text = "Atualizar";
             this.btnatualizar.UseVisualStyleBackColor = true;
+            this.btnatualizar.Click += new System.EventHandler(this.btnatualizar_Click);
             // 
             // Form1
             // 
