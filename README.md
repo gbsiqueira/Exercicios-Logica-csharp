@@ -10,6 +10,10 @@ Cada pasta dentro deste repositório representa um exercício específico:
 * `Exercicio-Media de Aluno`: Prática de operações matemáticas básicas.
 * `Exercicio-Lista de Tenis`: Prática de manipulação de coleções dinâmicas (List<string>) e sincronização de interface visual (WinForms) através de métodos de limpeza e atualização de tela.
 * `Exercicio-Gerenciador de Tarefas`: Evolução do uso de listas com foco em UX (User Experience). Implementação de validação de caracteres, mensagens de status via Label e remoção inteligente através de índices (SelectedIndex).
+* `Exercicio04-POO`: Introdução à Programação Orientada a Objetos. 
+  Implementação de uma classe "molde" com propriedades automatizadas (get; set;) 
+  para representar componentes de hardware. O projeto demonstra a 
+  instanciação de objetos e a persistência temporária de dados em memória durante a execução.
 
 
 ## 🛠️ Tecnologias Utilizadas
