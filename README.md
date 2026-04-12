@@ -6,14 +6,19 @@ Este repositório foi criado para organizar todos os exercícios e projetos de l
 O foco principal é o aprendizado de fundamentos de programação.
 
 ## 📂 Estrutura do Repositório
-Cada pasta dentro deste repositório representa um exercício específico:
-* `Exercicio-Media de Aluno`: Prática de operações matemáticas básicas.
-* `Exercicio-Lista de Tenis`: Prática de manipulação de coleções dinâmicas (List<string>) e sincronização de interface visual (WinForms) através de métodos de limpeza e atualização de tela.
-* `Exercicio-Gerenciador de Tarefas`: Evolução do uso de listas com foco em UX (User Experience). Implementação de validação de caracteres, mensagens de status via Label e remoção inteligente através de índices (SelectedIndex).
-* `Exercicio04-POO`: Introdução à Programação Orientada a Objetos. 
-  Implementação de uma classe "molde" com propriedades automatizadas (get; set;) 
-  para representar componentes de hardware. O projeto demonstra a 
-  instanciação de objetos e a persistência temporária de dados em memória durante a execução.
+Cada pasta representa um desafio específico.
+
+[!IMPORTANT]
+Nota: Para os projetos a partir do Exercício 05, você encontrará um arquivo README.md detalhado dentro de cada pasta, explicando a lógica e os conceitos específicos aplicados.
+
+Exercícios Iniciais:
+Exercicio-Media de Aluno: Prática de operações matemáticas básicas.
+
+Exercicio-Lista de Tenis: Prática de manipulação de coleções dinâmicas (List) e sincronização de interface.
+
+Exercicio-Gerenciador de Tarefas: Evolução do uso de listas com foco em UX, validação e remoção por índice.
+
+Exercicio04-POO: Introdução à Programação Orientada a Objetos com classes "molde" e propriedades.
 
 
 ## 🛠️ Tecnologias Utilizadas
