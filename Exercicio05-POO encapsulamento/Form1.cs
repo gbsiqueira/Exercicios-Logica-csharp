@@ -30,14 +30,22 @@ namespace Exercicio05_POO_encapsulamento
 
             }
             try
-            {  //CHAMA O METODO LIMPAR TUDO
-                limpartudo();
+            { 
                 //ATRIBUINDO A VARIAVEL VALOR
                 decimal valor = decimal.Parse(txtsaldo.Text);
-                //CHAMANDO O METODO ADICIONAR SALDO DO MEU OBJETO E DANDO A MINHA VARIAVEL VALOR A ELE
-                conta1.AdicionarSaldo(valor);
-                //EXIBINDO O MEU SALDO ATUAL
-                txtsaldoatual.Text = Convert.ToString(conta1.Saldo);
+                //SE CASO O VALOR RETORNADO FOR TRUE
+                if (conta1.AdicionarSaldo(valor))
+                {   //MOSTRA O VALOR DA CONTA1 
+                    txtsaldoatual.Text = Convert.ToString(conta1.Saldo);
+                }
+                else
+                {
+                    //CASO AO CONTRARIO MOSTRE ESSA MENSAGEM
+                    MessageBox.Show("O valor deve ser maior que 0", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                //CHAMA O METODO LIMPAR TUDO
+                limpartudo();
 
             }
             catch
@@ -55,6 +63,14 @@ namespace Exercicio05_POO_encapsulamento
             txtsaldo.Focus();
             //ATUALIZANDO O SALDO
             txtsaldoatual.Text = Convert.ToString(conta1.Saldo);
+            //LIMPANDO OS ITEMS DA MINHA LISTBOX
+            lst.Items.Clear();
+            //ATUALIZANDO A LISTBOX
+            foreach (string frase in conta1.Extrato)
+            {
+                lst.Items.Add(frase);
+            }
+
         }
 
         private void btnatualizar_Click(object sender, EventArgs e)
@@ -73,14 +89,13 @@ namespace Exercicio05_POO_encapsulamento
 
             }
             try
-            {   //CHAMA O METODO LIMPARTUDO
-                limpartudo();
+            {   
                 //ATRIBUINDO A VARIAVEL VALOR
                 decimal valor = decimal.Parse(txtsaldo.Text);
 
                 if (conta1.RemoverSaldo(valor))
                 {
-                    txtsaldo.Text = Convert.ToString(conta1.Saldo);
+                    txtsaldoatual.Text = Convert.ToString(conta1.Saldo);
                 }
                 else
                 {
@@ -88,6 +103,8 @@ namespace Exercicio05_POO_encapsulamento
                     txtsaldo.BackColor = Color.Red;
                     txtsaldo.Focus();
                 }
+                //CHAMA O METODO LIMPARTUDO
+                limpartudo();
 
             }
             catch
@@ -98,6 +115,16 @@ namespace Exercicio05_POO_encapsulamento
                 txtsaldo.Focus();
 
             }
+        }
+
+        private void lst_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

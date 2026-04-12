@@ -44,10 +44,11 @@
             // lst
             // 
             this.lst.FormattingEnabled = true;
-            this.lst.Location = new System.Drawing.Point(72, 82);
+            this.lst.Location = new System.Drawing.Point(12, 82);
             this.lst.Name = "lst";
-            this.lst.Size = new System.Drawing.Size(188, 160);
+            this.lst.Size = new System.Drawing.Size(495, 160);
             this.lst.TabIndex = 0;
+            this.lst.SelectedIndexChanged += new System.EventHandler(this.lst_SelectedIndexChanged);
             // 
             // txtsaldo
             // 
@@ -60,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 24);
+            this.label1.Location = new System.Drawing.Point(236, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(430, 20);
             this.label1.TabIndex = 2;
@@ -75,7 +76,7 @@
             this.groupBox1.Controls.Add(this.btnretirar);
             this.groupBox1.Controls.Add(this.btnadicionar);
             this.groupBox1.Controls.Add(this.txtsaldo);
-            this.groupBox1.Location = new System.Drawing.Point(304, 82);
+            this.groupBox1.Location = new System.Drawing.Point(514, 82);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(294, 123);
             this.groupBox1.TabIndex = 3;
@@ -141,12 +142,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 450);
+            this.ClientSize = new System.Drawing.Size(893, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lst);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
