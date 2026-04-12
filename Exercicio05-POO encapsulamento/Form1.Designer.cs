@@ -36,7 +36,8 @@
             this.btnretirar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnatualizar = new System.Windows.Forms.Button();
-            this.lblsaldo = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtsaldoatual = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             // 
             // txtsaldo
             // 
-            this.txtsaldo.Location = new System.Drawing.Point(43, 32);
+            this.txtsaldo.Location = new System.Drawing.Point(31, 32);
             this.txtsaldo.Name = "txtsaldo";
             this.txtsaldo.Size = new System.Drawing.Size(100, 20);
             this.txtsaldo.TabIndex = 1;
@@ -67,6 +68,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtsaldoatual);
             this.groupBox1.Controls.Add(this.btnatualizar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.btnretirar);
@@ -86,6 +89,7 @@
             this.btnadicionar.TabIndex = 0;
             this.btnadicionar.Text = "Adicionar Saldo";
             this.btnadicionar.UseVisualStyleBackColor = true;
+            this.btnadicionar.Click += new System.EventHandler(this.btnadicionar_Click);
             // 
             // btnretirar
             // 
@@ -95,11 +99,12 @@
             this.btnretirar.TabIndex = 1;
             this.btnretirar.Text = "Remover Saldo";
             this.btnretirar.UseVisualStyleBackColor = true;
+            this.btnretirar.Click += new System.EventHandler(this.btnretirar_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(60, 16);
+            this.label2.Location = new System.Drawing.Point(42, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 4;
@@ -113,22 +118,30 @@
             this.btnatualizar.TabIndex = 5;
             this.btnatualizar.Text = "Atualizar Lista";
             this.btnatualizar.UseVisualStyleBackColor = true;
+            this.btnatualizar.Click += new System.EventHandler(this.btnatualizar_Click);
             // 
-            // lblsaldo
+            // label3
             // 
-            this.lblsaldo.AutoSize = true;
-            this.lblsaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsaldo.Location = new System.Drawing.Point(301, 208);
-            this.lblsaldo.Name = "lblsaldo";
-            this.lblsaldo.Size = new System.Drawing.Size(0, 16);
-            this.lblsaldo.TabIndex = 6;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(156, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Saldo atual na conta:";
+            // 
+            // txtsaldoatual
+            // 
+            this.txtsaldoatual.Enabled = false;
+            this.txtsaldoatual.Location = new System.Drawing.Point(159, 32);
+            this.txtsaldoatual.Name = "txtsaldoatual";
+            this.txtsaldoatual.Size = new System.Drawing.Size(100, 20);
+            this.txtsaldoatual.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 450);
-            this.Controls.Add(this.lblsaldo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lst);
@@ -151,7 +164,8 @@
         private System.Windows.Forms.Button btnadicionar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnatualizar;
-        private System.Windows.Forms.Label lblsaldo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtsaldoatual;
     }
 }
 
