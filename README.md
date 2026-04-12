@@ -8,8 +8,8 @@ O foco principal é o aprendizado de fundamentos de programação.
 ## 📂 Estrutura do Repositório
 Cada pasta representa um desafio específico.
 
-[!IMPORTANT]
-Nota: Para os projetos a partir do Exercício 05, você encontrará um arquivo README.md detalhado dentro de cada pasta, explicando a lógica e os conceitos específicos aplicados.
+> [!IMPORTANT]
+> **Nota:** Para os projetos a partir do Exercício 05, você encontrará um arquivo README.md detalhado dentro de cada pasta.
 
 Exercícios Iniciais:
 Exercicio-Media de Aluno: Prática de operações matemáticas básicas.
