@@ -46,7 +46,7 @@ namespace Exercicio05_POO_encapsulamento
 
         public bool RemoverSaldo(decimal valor)
         {   //SE O VALOR FOR MENOR QUE 0 COLOQUE ESSA MENSAGEM EM MENSAGEM ERRO
-            if (valor < 1)
+            if (valor <= 0)
             {
                 Mensagemerro = "O valor deve ser maior que 0";
 

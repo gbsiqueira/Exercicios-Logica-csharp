@@ -94,11 +94,12 @@ namespace Exercicio05_POO_encapsulamento
                 decimal valor = decimal.Parse(txtsaldo.Text);
 
                 if (conta1.RemoverSaldo(valor))
-                {
+                {   
                     txtsaldoatual.Text = Convert.ToString(conta1.Saldo);
                 }
                 else
                 {
+                    //COLOCANDO MEU METODO STRING PARA EXIBIR UMA MENSAGEM PERSONALIZADA
                     MessageBox.Show($"{conta1.Mensagemerro}", "falha na operação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtsaldo.BackColor = Color.Red;
                     txtsaldo.Focus();
