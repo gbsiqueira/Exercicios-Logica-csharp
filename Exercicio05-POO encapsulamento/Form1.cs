@@ -13,7 +13,7 @@ namespace Exercicio05_POO_encapsulamento
     public partial class Form1 : Form
     {   //INSTANCIANDO UM OBJETO
         SaldoClasse conta1 = new SaldoClasse();
-
+       
         public Form1()
         {
             InitializeComponent();
@@ -99,7 +99,7 @@ namespace Exercicio05_POO_encapsulamento
                 }
                 else
                 {
-                    MessageBox.Show("O valor que deseja retirar não pode ser 0 e nem maior do que o valor que possui em sua conta", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"{conta1.Mensagemerro}", "falha na operação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtsaldo.BackColor = Color.Red;
                     txtsaldo.Focus();
                 }
