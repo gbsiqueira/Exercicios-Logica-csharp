@@ -3,62 +3,74 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 
-List<Conta> contas = new List<Conta>();
-
-bool Loopescolha = false;
-
-while (!Loopescolha)
+namespace Exercicio06BancoConsole
 {
-    Console.Clear();
-
-    Console.WriteLine("O que você deseja fazer? 1: Entrar em uma conta, 2: Criar uma conta, 3: Sair do banco");
-
-    string Escolha = Console.ReadLine();
-
-    switch (Escolha)
+    class Program
     {
-        case "1":
+        static void Main(string[] args)
+        {
+            List<Conta> contas = new List<Conta>();
+            bool Loopescolha = false; while (!Loopescolha)
+            {
+                Console.Clear();
 
-            break;
+                Console.WriteLine("O que você deseja fazer? 1: Entrar em uma conta, 2: Criar uma conta, 3: Sair do banco");
 
-        case "2":
+                string Escolha = Console.ReadLine();
 
-            Console.WriteLine("Qual o seu nome?");
-            string Nome = Console.ReadLine();
+                switch (Escolha)
+                {
+                    case "1":
 
-            Console.WriteLine("Digite seu CPF : ");
-            String Cpf = Console.ReadLine();
+                        break;
 
+                    case "2":
 
-            User NovoUsuario = new User();
-            Conta NovaConta = new Conta();
+                        Console.WriteLine("Qual o seu nome?");
+                        string Nome = Console.ReadLine();
 
-            NovoUsuario.Nome = Nome;
-            NovoUsuario.Cpf = Cpf;
-
-
-            // Atribuindo o titular com o usuario 
-            NovaConta.Titular = NovoUsuario;
+                        Console.WriteLine("Digite seu CPF : ");
+                        String Cpf = Console.ReadLine();
 
 
+                        User NovoUsuario = new User();
+                        Conta NovaConta = new Conta();
 
-            contas.Add(NovaConta);
+                        NovoUsuario.Nome = Nome;
+                        NovoUsuario.Cpf = Cpf;
 
-            Console.WriteLine("Sucesso! sua conta foi criada, aperte qualquer tecla para sair");
-            Console.ReadKey();
 
-            break;
+                        // Atribuindo o titular com o usuario 
+                        NovaConta.Titular = NovoUsuario;
 
-        case "3":
 
-            Loopescolha = true;
-            
-            break;
 
-        default:
+                        contas.Add(NovaConta);
 
-            Console.WriteLine("Apenas essas 3 opções são permitidas");
+                        Console.WriteLine("Sucesso! sua conta foi criada, aperte qualquer tecla para sair");
+                        Console.ReadKey();
 
-            break;
+                        break;
+
+                    case "3":
+
+                        Loopescolha = true;
+
+                        break;
+
+                    default:
+
+                        Console.WriteLine("Apenas essas 3 opções são permitidas");
+
+                        break;
+                }
+            }
+        }
+
     }
 }
+
+
+
+
+
