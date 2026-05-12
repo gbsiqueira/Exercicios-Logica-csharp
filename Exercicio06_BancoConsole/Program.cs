@@ -22,6 +22,36 @@ namespace Exercicio06BancoConsole
                 {
                     case "1":
 
+                        Console.WriteLine("Digite o CPF do titular");
+                        string BuscaCpf = Console.ReadLine();
+
+                        // variavel pra ajudar a achar a uma conta, começa em null 
+                        Conta AcharConta = null;
+
+                        foreach (var c in contas)
+                        {
+                            if (c.Titular.Cpf == BuscaCpf)
+                            {
+                                AcharConta = c;
+                                break;
+                            }
+
+                        }
+
+                        if (AcharConta != null)
+                        {
+                            Console.WriteLine($"Você entrou na conta do Titular {AcharConta.Titular.Nome}");
+                            Console.WriteLine($"Seu saldo e de {AcharConta.Saldo:C}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Erro, sua conta não foi encontrada");
+                        }
+
+                        Console.WriteLine("Pressione qualquer tecla para voltar ao menu principal : ");
+
+                        Console.ReadKey();
+
                         break;
 
                     case "2":
